@@ -1,0 +1,219 @@
+body {
+    font-family: "Trirong", sans-serif;
+    align-items: center;
+    justify-content: center;
+    scroll-behavior: smooth;
+    margin: 0;
+    position: relative; 
+    height: 100vh;
+    width: 100%;
+
+    align-items: center;
+    justify-content: center;
+}
+
+body::before {    
+    content: "";
+    background-image: url("https://www.girnationalparkbooking.com/frontend/images/lion-1.jpg");
+    background-size: cover;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    opacity: 0.75;
+}
+
+.text-Anim , .text-cont {
+    position: relative;  
+    line-height: 0.9;
+    text-align: center;
+  }
+  
+.nav-navbar{
+    height: 150px;
+}
+
+.navbar-link a{
+    color: white;
+}
+
+.navbar-link a:hover{
+    color: #DD8909;
+}
+.main{
+    position:relative;
+}
+
+.animate-charcter
+{
+   text-transform: uppercase;
+  background-image: linear-gradient(
+    -205deg,
+    #176ccd 0%,
+    #7a19e2 29%,
+    #ff1361 67%,
+    #DD8909 100%
+  );
+  background-size: auto auto;
+  background-clip: border-box;
+  background-size: 200% auto;
+  color: #fff;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+  animation: textclip 5s linear infinite;
+  display: inline-block;
+  font-size: 150px;
+  margin-top: 50px;
+  margin-bottom: 80px;
+}
+
+@keyframes textclip {
+  to {
+    background-position: 300% center;
+  }
+  0% {
+    opacity: 0;
+}
+100% {
+    opacity: 1;
+}
+  
+}
+.navbar-link1{
+  color: white;
+}
+.navbar-link2{
+  color: #DD8909;
+}
+.navbar-link1:hover{
+  color: #DD8909;
+}
+.form2-img{
+  background-color: white;
+  border-radius: 10px;
+  padding: 20px 40px;
+  box-shadow: 0 10px 25px rgba(39, 41, 43, 0.2);
+}
+.form2-img1 {
+  background-color: white;
+  border-radius: 10px;
+  padding: 20px 40px;
+  box-shadow: 0 10px 25px rgba(39, 41, 43, 0.2);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Pop Up Chat Button */
+
+.open-button {
+    border-radius: 50%;
+    color: white;
+    padding: 16px 20px;
+    border: none;
+    cursor: pointer;
+    opacity: 0.8;
+    position: fixed;
+    bottom: 23px;
+    right: 28px;
+    width: 100px;
+  }
+  
+  .chat-popup {
+    display: none;
+    position: fixed;
+    bottom: 0;
+    right: 15px;
+    border: 3px solid #f1f1f1;
+    z-index: 9;
+  }
+  
+  .form-container {
+    max-width: 250px;
+    padding: 10px;
+    background-color: white;
+  }
+  
+  .form-container textarea {
+    width: 100%;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    border: none;
+    background: white;
+    resize: none;
+    min-height: 200px;
+  }
+  
+  .form-container textarea:focus {
+    background-color: rgb(247, 243, 243);
+    outline: none;
+  }
+  
+  .form-container .btn:hover,
+  .open-button:hover {
+    opacity: 1;
+  }
+  
+  /* Go to Top */
+  
+  .go-top {
+    position: fixed;
+    bottom: 0;
+    left: 15px;
+    background-color: #3c90d6;
+    padding: 10px;
+    border-radius: 6px;
+    visibility: hidden;
+    opacity: 0;
+    transition: -1;
+  }
+  
+  .go-top.active {
+    visibility: visible;
+    opacity: 1;
+    transform: translateY(-15px);
+  }
+  
+  .go-top:is(:hover, :focus) {
+    transform: translateY(-25px);
+  }
+  
